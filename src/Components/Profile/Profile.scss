@@ -1,0 +1,42 @@
+$white: #ffffff;
+$purple: #6f5fbc;
+$light-black: #1c1c1c;
+
+.profile-section {
+  .profile-section-wrapper {
+    max-width: 680px;
+    margin-inline: auto;
+    padding: 50px 10px;
+    text-align: center;
+    .user-img {
+      img {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+    }
+    .profile-update-form {
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 10px;
+        input {
+          border: 0;
+          outline: 0;
+          padding: 20px;
+        }
+        .button {
+          button {
+            width: 100%;
+            padding: 12px 0;
+            background-color: $purple;
+            color: $white;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

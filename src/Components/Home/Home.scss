@@ -1,0 +1,15 @@
+$green: #00ff00;
+$red: #ff0000;
+$light-black: #1c1c1c;
+$white: #ffffff;
+
+.main-section {
+  padding: 50px 0;
+  .main-section-wrapper {
+    max-width: 700px;
+    margin-inline: auto;
+    h1 {
+      text-align: center;
+    }
+  }
+}

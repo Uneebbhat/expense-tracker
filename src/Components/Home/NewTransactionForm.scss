@@ -1,0 +1,58 @@
+$green: #00ff00;
+$red: #ff0000;
+$white: #ffffff;
+
+.new-transaction-section {
+  .new-transaction-wrapper {
+    padding: 50px 10px;
+    .from-wrapper {
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+        input {
+          border: 0;
+          outline: 0;
+          padding: 20px;
+        }
+        .buttons {
+          display: flex;
+          gap: 10px;
+          button {
+            padding: 12px 0;
+            width: 50%;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+          }
+          .add-cash {
+            background-color: $green;
+            color: $white;
+          }
+          .add-expense {
+            background-color: $red;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .new-transaction-section {
+    .new-transaction-wrapper {
+      .from-wrapper {
+        .form {
+          .buttons {
+            flex-direction: column;
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

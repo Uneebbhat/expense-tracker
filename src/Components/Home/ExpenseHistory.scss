@@ -1,0 +1,28 @@
+$light-black: #1c1c1c;
+$light-grey: #f3f4f6;
+$oceanic-blue: #0077b6;
+$purple: #6f5fbc;
+$green: #00ff00;
+$red: #ff0000;
+$white: #ffffff;
+
+.expense-history-section {
+  .expense-history-wrapper {
+    padding: 0 10px;
+    .history-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .history-box {
+        display: flex;
+        justify-content: space-between;
+        background-color: $white;
+        padding: 20px;
+        border-right: 10px solid $red;
+      }
+      .green {
+        border-right: 10px solid $green;
+      }
+    }
+  }
+}
