@@ -2,7 +2,7 @@ import React from "react";
 import "./ExpenseBalance.scss";
 
 export default function ExpenseBalance() {
-  const userBalance = localStorage.getItem("balance");
+  const userBalance = localStorage.getItem("User Balance");
 
   return (
     <>

@@ -20,8 +20,8 @@ export default function Profile() {
   }, []);
 
   const updateProfile = () => {
-    localStorage.setItem("name", userName);
-    localStorage.setItem("balance", userBalance);
+    localStorage.setItem("User Name", userName);
+    localStorage.setItem("User Balance", userBalance);
   };
 
   return (

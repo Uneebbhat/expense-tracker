@@ -24,5 +24,9 @@ $white: #ffffff;
         border-right: 10px solid $green;
       }
     }
+    .history-wrapper {
+      height: 225px;
+      overflow-y: scroll;
+    }
   }
 }
