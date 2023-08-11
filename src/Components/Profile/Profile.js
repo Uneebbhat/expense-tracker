@@ -1,19 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Profile.scss";
 import img from "../../assets/user.png";
 
 export default function Profile() {
-  const [userName, setUseName] = useState("");
-  const [userBalance, setUseBalance] = useState("");
+  const [userName, setUserName] = useState("");
+  const [userBalance, setUserBalance] = useState("");
+
+  useEffect(() => {
+    const storedName = localStorage.getItem("name");
+    const storedBalance = localStorage.getItem("balance");
+
+    if (storedName) {
+      setUserName(storedName);
+    }
+
+    if (storedBalance) {
+      setUserBalance(storedBalance);
+    }
+  }, []);
 
   const updateProfile = () => {
-    const newName = userName;
-    const newBalance = userBalance;
-    localStorage.setItem("userName", newName);
-    localStorage.setItem("userBalance", newBalance);
-    setUseName(newName);
-    setUseBalance(newBalance);
-    console.log("updated");
+    localStorage.setItem("name", userName);
+    localStorage.setItem("balance", userBalance);
   };
 
   return (
@@ -35,9 +43,7 @@ export default function Profile() {
                 id="name"
                 placeholder="Update name"
                 value={userName}
-                onChange={(e) => {
-                  setUseName(e.target.value);
-                }}
+                onChange={(e) => setUserName(e.target.value)}
               />
               <input
                 type="number"
@@ -45,9 +51,7 @@ export default function Profile() {
                 id="balance"
                 placeholder="Update balance"
                 value={userBalance}
-                onChange={(e) => {
-                  setUseBalance(e.target.value);
-                }}
+                onChange={(e) => setUserBalance(e.target.value)}
               />
               <div className="button">
                 <button className="update-btn" onClick={updateProfile}>
