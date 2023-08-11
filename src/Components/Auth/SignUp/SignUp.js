@@ -14,6 +14,7 @@ export default function SignUp() {
 
   const [user, setUser] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
+  console.log(user);
 
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
@@ -28,6 +29,7 @@ export default function SignUp() {
         registerEmail,
         registerPassowrd
       );
+      console.log(user);
       navigate("/");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {

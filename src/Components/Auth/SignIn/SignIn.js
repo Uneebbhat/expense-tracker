@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./SignIn.scss";
 import { auth } from "../../../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -19,6 +19,7 @@ export default function SignIn() {
         loginEmail,
         loginPassword
       );
+      console.log(user);
       navigate("/");
     } catch (error) {
       if (error.code === "auth/user-not-found") {
