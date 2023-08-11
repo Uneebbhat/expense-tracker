@@ -1,0 +1,67 @@
+$oceanic-blue: #0077b6;
+$light-grey: #f3f4f6;
+$white: #ffffff;
+
+.from {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  .signup-heading {
+    h2 {
+      font-size: clamp(2rem, 10vw, 4rem);
+    }
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    .email-wrapper {
+      input {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: white;
+        outline: none;
+      }
+    }
+
+    .password-wrapper {
+      input {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: white;
+        outline: none;
+      }
+    }
+
+    .button {
+      button {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: #0077b6;
+        border: 0;
+        outline: 0;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .error {
+      background-color: rgb(255, 87, 87);
+      padding: 20px;
+      color: white;
+    }
+
+    .small-text {
+      a {
+        color: $oceanic-blue;
+      }
+    }
+  }
+}

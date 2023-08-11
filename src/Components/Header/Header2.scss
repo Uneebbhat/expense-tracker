@@ -1,0 +1,16 @@
+$oceanic-blue: #0077b6;
+$light-grey: #f3f4f6;
+$white: #ffffff;
+
+.secondary-header {
+  background-color: $light-grey;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    text-align: center;
+    color: $oceanic-blue;
+  }
+}

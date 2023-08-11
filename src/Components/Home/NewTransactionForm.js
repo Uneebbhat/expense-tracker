@@ -48,7 +48,6 @@ export default function NewTransactionForm() {
                   onChange={(e) => setItemPrice(e.target.value)}
                 />
                 <div className="buttons">
-                  <button className="add-cash">Add cash</button>
                   <button className="add-expense" onClick={addExpense}>Add expense</button>
                 </div>
               </div>

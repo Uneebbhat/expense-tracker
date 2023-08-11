@@ -3,6 +3,9 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const remove = () => {
+    localStorage.removeItem("check");
+  };
   return (
     <>
       <div className="wrapper">
@@ -16,7 +19,9 @@ export default function Header() {
                 <Link to="/profile">Profile</Link>
               </li>
             </ul>
-            <button className="header-btn">Sign out</button>
+            <button className="header-btn">
+              <Link to="/signin">Sign out</Link>
+            </button>
           </nav>
         </header>
       </div>

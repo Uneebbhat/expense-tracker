@@ -24,10 +24,12 @@ $white: #ffffff;
       .header-btn {
         padding: 8px 22px;
         background-color: $oceanic-blue;
-        color: $white;
         border: 0;
         outline: 0;
         border-radius: 100px;
+        a {
+          color: $white;
+        }
       }
     }
   }

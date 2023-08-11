@@ -27,6 +27,8 @@ $white: #ffffff;
     .history-wrapper {
       height: 225px;
       overflow-y: scroll;
+      .history-message {}
+      text-align: center;
     }
   }
 }
